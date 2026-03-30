@@ -43,7 +43,6 @@ public class WordleGame {
     }
 
     // Основной метод хода
-    // Выбрасывает проверяемые исключения в сигнатуре согласно ТЗ
     public String guess(String word) throws InvalidWordLengthException, WordNotFoundException {
         if (word == null || word.length() != 5) {
             throw new InvalidWordLengthException("Введенное слово должно состоять ровно из 5 букв.");
@@ -57,7 +56,6 @@ public class WordleGame {
 
         String feedback = calculateFeedback(word, answer);
 
-        // Ход засчитывается только если слово прошло все проверки
         steps--;
         history.put(word, feedback);
         log.println("Пользователь ввел: " + word + ", Результат: " + feedback + ", Осталось шагов: " + steps);
