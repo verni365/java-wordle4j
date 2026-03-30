@@ -33,6 +33,7 @@ public class WordleGame {
     public int getSteps() {
         return steps;
     }
+    
     public String getAnswer() {
         return answer;
     }
