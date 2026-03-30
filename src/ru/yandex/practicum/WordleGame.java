@@ -30,8 +30,12 @@ public class WordleGame {
         log.println("Новая игра начата. (Для отладки: загадано слово '" + answer + "')");
     }
 
-    public int getSteps() { return steps; }
-    public String getAnswer() { return answer; }
+    public int getSteps() {
+        return steps;
+    }
+    public String getAnswer() {
+        return answer;
+    }
 
     // Игра завершается, если ходов не осталось или слово угадано
     public boolean isGameOver() {
